@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talk to Lexi</title>
+  <style>
+    body {
+      background-color: #FFF9F0;
+      font-family: sans-serif;
+      color: #0B3D2E;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .waveform {
+      margin: 30px auto;
+      width: 200px;
+      height: 100px;
+      background: url('waveform.gif') no-repeat center;
+      background-size: contain;
+    }
+    .btn {
+      background: #0B3D2E;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #09402f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Talk to Lexi</h1>
+  <div class="waveform"></div>
+  <button class="btn" onclick="startVoice()">🎤 Start Talking</button>
+
+  <script>
+    async function startVoice() {
+      alert("Voice assistant launching... (AI integration pending)");
+      // Placeholder for Whisper + ElevenLabs + Claude + Supabase integration
+    }
+  </script>
+</body>
+</html>
